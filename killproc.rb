@@ -9,6 +9,7 @@ puts '''
    / /_/ / /  / /_/ / /__/ ,< / / / /  
   / .___/_/   \____/\___/_/|_/_/_/_/   
  /_/       
+                 written by xchewmer
 '''
 
 puts
@@ -29,7 +30,7 @@ File.open("./test.txt", "r") do |f|
   f.each_line do |line|
     pid = line.split(' ')[1]
     begin
-      if !line.include? "ruby" and !line.include? "grep"
+      if !(line.include? "ruby" or line.include? "grep")
         puts "[+] killing pid #{pid}"
         out = `sudo kill -9 #{line.split(' ')[1]} > kill.txt`
       end

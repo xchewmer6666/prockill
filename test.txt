@@ -1,0 +1,4 @@
+root       49399  3.8  0.0  17584  7552 pts/0    S+   13:18   0:00 sudo ./killproc.rb --name wiho
+root       49400 56.5  0.1  79080 22912 pts/0    S+   13:18   0:00 /usr/bin/ruby ./killproc.rb --name wiho
+root       49401  0.0  0.0   7508  3584 pts/0    S+   13:18   0:00 sh -c ps aux | grep wiho > test.txt
+root       49403  0.0  0.0   6580  2304 pts/0    S+   13:18   0:00 grep wiho
